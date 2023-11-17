@@ -52,7 +52,7 @@ if (process.platform === 'darwin') {
   params = `${params} --show-menu`;
 }
 
-params= `${params} --user-agent ${process.env.USER_AGENT}`;
+params = `${params} --user-agent ${process.env.USER_AGENT}`;
 
 const downloadIcon = async iconFile => {
   try {
