@@ -14,6 +14,10 @@ on:
       url:
         description: '[URL]'
         required: true
+      user_agent:
+        description: '[User Agent]'
+        required: true
+        default: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.2151.72'
       name:
         description: '[Name]'
         required: true
