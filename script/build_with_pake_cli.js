@@ -17,6 +17,7 @@ console.log('transparent: ', process.env.TRANSPARENT);
 console.log('resize: ', process.env.RESIZE);
 console.log('is multi arch? only for Mac: ', process.env.MULTI_ARCH);
 console.log('targets type? only for Linux: ', process.env.TARGETS);
+console.log('user agent: ', process.env.USER_AGENT);
 console.log('===========================\n');
 
 cd('node_modules/pake-cli');
@@ -50,6 +51,8 @@ if (process.platform === 'linux') {
 if (process.platform === 'darwin') {
   params = `${params} --show-menu`;
 }
+
+params= '${params} --user-agent ${process.env.USER_AGENT}';
 
 const downloadIcon = async iconFile => {
   try {
